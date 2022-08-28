@@ -1,12 +1,14 @@
 import React, {Component, useState} from "react";
 import "./../styles/App.css";
+import Para from './Para';
 
-function App() {
+const App = () => {
   return (
     <div id="main">
-      // Do not alter the main div
-    </div>
-  );
+    // Do not alter the main div
+    <Para paragraph="Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"/>
+  </div>
+  )
 }
 
 
