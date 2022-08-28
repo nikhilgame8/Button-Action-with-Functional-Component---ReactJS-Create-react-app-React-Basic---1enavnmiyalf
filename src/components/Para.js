@@ -7,7 +7,7 @@ function textpara(){
 }
   return (
     <div>
-      <button id="click" onClick={textpara()}>Click</button>
+      <button id="click" onClick={textpara}>Click</button>
       <p id="para">{text}</p>
     </div>
   )
