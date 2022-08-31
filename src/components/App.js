@@ -1,11 +1,22 @@
+import React, {useState} from 'react'
 import "./../styles/App.css";
-import Para from './Para';
 
 const App = () => {
+  const[state, setState]=useState(false);
+	const toggle=()=>{
+		if(!state){
+			setState(true);
+		}
+		else {
+			setState(false);
+		}
+	}
   return (
     <div id="main">
-    // Do not alter the main div
-    <Para paragraph="Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"/>
+    <button id='click' onClick={toggle}>click</button>
+		{state &&
+      <p>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+		}
   </div>
   );
 }
