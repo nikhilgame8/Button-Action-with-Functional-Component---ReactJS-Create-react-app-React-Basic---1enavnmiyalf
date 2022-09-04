@@ -3,14 +3,14 @@ import "./../styles/App.css";
 
 const App = () => {
   const[state, setState]=useState(false);
-	const toggle=()=>{
-		if(!state){
-			setState(true);
-		}
-		else {
-			setState(false);
-		}
-	}
+	  const toggle=()=>{
+		  if(state){
+			  setState(false);
+		  }
+		  else {
+			  setState(true);
+		  }
+	  }
   return (
     <div id="main">
     <button id='click' onClick={toggle}>click</button>
